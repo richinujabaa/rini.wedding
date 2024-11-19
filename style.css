@@ -1,13 +1,13 @@
 :root {
     --green: #226607;
-    --bg : #0c0c0c;
+    --bg: #0c0c0c;
     --shadow: 1px 1px 8px azure;
 }
 
 body {
     font-size: 1.2rem;
     font-family: "Work Sans", sans-serif;
-    min-height: 2000px;
+    min-height: 4000px;
 
 }
 
@@ -20,7 +20,9 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(image/prewedding.png);
-    z-index: -1; 
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
     filter: blur();
 
 }
@@ -30,13 +32,15 @@ body {
     min-height: 100vh;
 }
 
-.hero h1, .hero h4, .hero p {
-    text-shadow: var(--shadow);
+.hero h1,
+.hero h4,
+.hero p {
+    text-shadow: var(--shadow), 1px 1px 1px black;
 }
 
 .hero h1 {
     font-family: "Waterfall", cursive;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 .hero h4 {
@@ -59,38 +63,64 @@ body {
     box-shadow: 0px 0px 8px #226607, 0px 0px 8px #226607;
 }
 
+.maynavbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.mynavbar .navbar-brand,
+.navbar .offcanvas-title {
+    font-family: "Waterfall", cursive;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+
+.home {
+    background-image: url(image/pattern.jpg);
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
 /* laptop */
 @media (max-width: 992px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 
-     .simply-countdown > .simply-section {
+    .simply-countdown>.simply-section {
         padding: 27px;
-     }
+    }
 }
 
 
 /* tablet */
 @media (max-width: 768) {
     html {
-        font-size: 35%;
+        font-size: 50%;
     }
+
     .simply-countdown > .simply-section {
         padding: 15px;
         margin: 5px;
-     }
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+
 }
 
 
 /* handphone */
-@media (max-width: 576px ) {
+@media (max-width: 576px) {
     html {
         font-size: 40%;
     }
 }
-
-
-
-
-
